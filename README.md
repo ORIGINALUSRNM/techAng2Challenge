@@ -1,31 +1,29 @@
 # TecholutionNg2Challenge
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+Create a custom combobox using Angular 2 and TDD.  A some supporting combobox files have already been created to start. 
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#Requirements
+1. Write in Typescript.
+2. Create your component based on the mock-up provided. 
+3. Write whatever unit tests you believe will help your component be strong and powerful.
+4. The component will have an open state and a closed state. 
+5. When closed, the component will simply show a label for whatever type of things the combobox is showing. In thise case, the combobox will handle a list of colors so the label should say, "Colors".
+5. When Opened, the combobox will show a list of available colors and a save and clear button at the top. 
+6. You should artifically generate 100 colors as data to be used by your combobox.
+7. Each item in the combobox when open shall consist of one checkbox and a horizontal strip that simply is the color of this color item. 
+8. the combobox will retain its state of all colors selected.
+9. When the user clicks the 'Save' button the combobox will update the retained selected colors based on the user selections and close the combobox. 
+10.  If the user clicks "Clear" then all color items will be deslected.  Combobox will remain open in case user wants to select a color(s).
+11. Only up to 10 colors should be visilbe within the height of the box.  The user should have to scroll to get to the additional colors. 
+
+
+## To Start
+-From the command line in the root: First run 'npm install'.
+
+-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+-Run unit tests as you go: Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you want to generate other files ( although not required ) you can make user of the angular cli api if you are familiar. 
